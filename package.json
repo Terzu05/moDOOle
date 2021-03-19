@@ -2,10 +2,21 @@
   "name": "modoole",
   "version": "1.0.0",
   "description": "coole modoole",
-  "main": "index.js",
+  "main": "moDOOle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Terzu05/moDOOle.git"
+  },
+  "keywords": [
+    "doo"
+  ],
   "author": "Terzu <terzu05@gmail.com> (https://doo.ywx.cz)",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Terzu05/moDOOle/issues"
+  },
+  "homepage": "https://github.com/Terzu05/moDOOle#readme"
 }
