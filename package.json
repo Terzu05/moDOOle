@@ -1,0 +1,11 @@
+{
+  "name": "modoole",
+  "version": "1.0.0",
+  "description": "coole modoole",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Terzu <terzu05@gmail.com> (https://doo.ywx.cz)",
+  "license": "ISC"
+}
