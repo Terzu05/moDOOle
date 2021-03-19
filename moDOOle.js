@@ -7,9 +7,7 @@ var viewFolder
 var reqVar;
 var resVar;
 
-exports.setViewFolder = function (folderName = './views') {
-    viewFolder = folderName;
-};
+
 
 exports.log = function (content = "I'm working!") {
     console.log('modoole: ' + content)
@@ -21,6 +19,10 @@ exports.web = function (port = 5000, code = function code(){}){
         resVar = res;
         code();
       }).listen(port);
+};
+
+exports.setViewFolder = function (folderName = '') {
+    viewFolder = folderName;
 };
 
 exports.route = function (fileName, routeName = ''){
@@ -39,6 +41,7 @@ exports.route = function (fileName, routeName = ''){
 exports.renderHTML = function (fileName){
     req = reqVar;
     res = resVar;
+    fileName = viewFolder + '/' + fileName;
     fs.readFile(fileName, function(err, data) {
         res.writeHead(200, {'Content-Type': 'text/html'});
         res.write(data);
