@@ -4,6 +4,10 @@ var fs = require('fs');
 //var fromIndex = require('./app.js');
 var md = require('./moDOOle.js');
 
+exports.log = function () {
+    console.log('looool')
+};
+
 exports.route = function (routeName, fileName) {
     req = fromIndex.getReq();
     res = fromIndex.getRes();
