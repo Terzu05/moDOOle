@@ -11,15 +11,8 @@ exports.setViewFolder = function (folderName = './views') {
     viewFolder = folderName;
 };
 
-exports.log = function () {
-    req = reqVar;
-    res = resVar;
-    var q = url.parse(req.url, true);
-    console.log('lolol = ' + q.pathname)
-};
-
-exports.functTest = function (port = 5000, code = function code(){}){
-    code();
+exports.log = function (content = "I'm working!") {
+    console.log('modoole: ' + content)
 };
 
 exports.web = function (port = 5000, code = function code(){}){
